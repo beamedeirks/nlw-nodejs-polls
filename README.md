@@ -1,6 +1,6 @@
 # NLW - Trilha NodeJS - RocketSeat
 
-Este projeto é uma aplicação de enquetes em tempo real, desenvolvida durante a trilha de Node.js do evento Next Level Week (NLW) da RocketSeat. Utilizando um stack moderno que inclui Node.js, Fastify, WebSocket, Redis, PostgreSQL, e Docker.
+Este projeto é uma aplicação de enquetes em tempo real, desenvolvida durante a trilha de Node.js do evento Next Level Week (NLW) da RocketSeat 💜
 
 ## Desenvolvimento
 
