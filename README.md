@@ -11,17 +11,17 @@ Para começar a utilizar este projeto, siga os passos abaixo:
    npm init
    ```
 2. Após a instalação das dependências, inicie o projeto com o seguinte comando:
-  ```bash
+   ```bash
    npm run dev
    ```
 3. É necessário que tenha o Docker instalado, caso seja necessário, utilize o Docker Compose para iniciar os containers do Docker:
-  ```bash
+   ```bash
    docker-compose up -d
    ```
 
-## Uso
+## Routes
 
-### Rota de criação de enquete
+### Criação de enquete
 
 **Descrição:** Esta rota permite criar uma nova enquete.
 
@@ -46,6 +46,35 @@ Para começar a utilizar este projeto, siga os passos abaixo:
 	"pollId": "1154e15c-4861-402a-86f0-c6803fd3f0b2"
 }
 ```
+
+### Criação de voto na enquete
+
+**Descrição:** Esta rota permite criar um voto na enquete.
+
+**Método HTTP:** POST
+
+**Endpoint:** `localhost:3333/polls/:pollId/votes`
+
+**Parâmetros:**
+- `pollOptionId` (string): A ID da opção da enquete.
+
+**Exemplo de requisição:**
+```json
+{
+	"pollOptionId":"31572617-0f93-4bd3-8ad6-0b95c12c51c1"
+}
+```
+**Exemplo de resposta (sucesso):**
+```json
+  // Status: 201 Created
+```
+**Exemplo de resposta (erro 400):**
+```json
+{
+	"message": "You have already voted on this poll"
+}
+```
+
 ### Rota 2
 
 Descrição, método HTTP, endpoint, parâmetros, exemplos de requisição e resposta...
