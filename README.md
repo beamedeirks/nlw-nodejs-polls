@@ -4,7 +4,20 @@ Um projeto incrível para demonstrar como documentar rotas em um README do GitHu
 
 ## Instalação e Configuração
 
-Instruções de instalação e configuração...
+Para começar a utilizar este projeto, siga os passos abaixo:
+
+1. Execute o comando abaixo para instalar as dependências:
+   ```bash
+   npm init
+   ```
+2. Após a instalação das dependências, inicie o projeto com o seguinte comando:
+  ```bash
+   npm run dev
+   ```
+3. É necessário que tenha o Docker instalado, caso seja necessário, utilize o Docker Compose para iniciar os containers do Docker:
+  ```bash
+   docker-compose up -d
+   ```
 
 ## Uso
 
