@@ -74,10 +74,62 @@ Para começar a utilizar este projeto, siga os passos abaixo:
 	"message": "You have already voted on this poll"
 }
 ```
+### Buscar enquete
 
-### Rota 2
+**Descrição:** Esta rota permite buscar uma enquete.
 
-Descrição, método HTTP, endpoint, parâmetros, exemplos de requisição e resposta...
+**Método HTTP:** GET
+
+**Endpoint:** `localhost:3333/polls/:pollId`
+
+**Exemplo de resposta:**
+```json
+{
+	"poll": {
+		"id": "1154e15c-4861-402a-86f0-c6803fd3f0b2",
+		"title": "Qual o melhor framework em Node JS?",
+		"options": [
+			{
+				"id": "4bf46822-8d31-45d6-9042-fac1b90a7413",
+				"title": "Express",
+				"score": 0
+			},
+			{
+				"id": "1533bd29-9bb2-46ec-8542-082a4e25a9b6",
+				"title": "Fastify",
+				"score": 0
+			},
+			{
+				"id": "31572617-0f93-4bd3-8ad6-0b95c12c51c1",
+				"title": "NestJS",
+				"score": 0
+			},
+			{
+				"id": "a4e31b24-169b-4d4f-adee-648c4a96f7ea",
+				"title": "HapiJS",
+				"score": 1
+			}
+		]
+	}
+}
+```
+### Resultado das enquetes
+
+**Descrição:** Esta rota permite o retorno dos resultados das enquetes utilizando o websocket.
+
+**Método:** WebSocket Request
+
+**Endpoint:** `ws://localhost:3333/polls/:pollId/results`
+
+**Exemplo de resposta:**
+
+A rota WebSocket `ws://localhost:3333/polls/:pollId/results` permite receber atualizações em tempo real dos resultados das enquetes. A resposta é enviada como uma mensagem JSON contendo o ID da opção da enquete e o número de votos correspondente.
+
+**Exemplo de mensagem de resposta:**
+```json
+  {"pollOptionId":"31572617-0f93-4bd3-8ad6-0b95c12c51c1","votes":1}
+  {"pollOptionId":"a4e31b24-169b-4d4f-adee-648c4a96f7ea","votes":0}
+```
 
 ## Exemplos
 
