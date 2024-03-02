@@ -26,14 +26,13 @@ Instruções de instalação e configuração...
 	"title": "Qual o melhor framework em Node JS?",
 	"options": ["Express", "Fastify", "NestJS", "HapiJS"]
 }
-
+```
 **Exemplo de resposta:**
 ```json
 {
 	"pollId": "1154e15c-4861-402a-86f0-c6803fd3f0b2"
 }
-
-
+```
 ### Rota 2
 
 Descrição, método HTTP, endpoint, parâmetros, exemplos de requisição e resposta...
