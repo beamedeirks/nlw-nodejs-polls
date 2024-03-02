@@ -1,6 +1,13 @@
-# Meu Projeto
+# NLW - Trilha NodeJS - RocketSeat
 
-Um projeto incrível para demonstrar como documentar rotas em um README do GitHub.
+Este projeto é uma aplicação de enquetes em tempo real, desenvolvida durante a trilha de Node.js do evento Next Level Week (NLW) da RocketSeat. Utilizando um stack moderno que inclui Node.js, Fastify, WebSocket, Redis, PostgreSQL, e Docker.
+
+## Desenvolvimento
+
+Durante o desenvolvimento, foram aplicados conceitos de API REST utilizando TypeScript e o framework Fastify. A integração do Prisma ORM facilitou a interação com o banco de dados PostgreSQL, enquanto o Docker foi utilizado para lidar com os serviços de PostgreSQL e Redis de forma simplificada.
+
+A validação de dados foi realizada utilizando Zod, garantindo a integridade e consistência dos dados recebidos pela aplicação. Além disso, a comunicação em tempo real foi implementada por meio de WebSocket, permitindo atualizações instantâneas dos resultados das enquetes para os usuários.
+
 
 ## Instalação e Configuração
 
@@ -131,14 +138,6 @@ A rota WebSocket `ws://localhost:3333/polls/:pollId/results` permite receber atu
   {"pollOptionId":"a4e31b24-169b-4d4f-adee-648c4a96f7ea","votes":0}
 ```
 
-## Exemplos
-
-Exemplos práticos de uso das rotas...
-
-## Contribuição
-
-Instruções para contribuir com o projeto...
-
 ## Licença
 
-Licença do projeto...
+Desenvolvido durante a trilha de Node.js do evento Next Level Week (NLW) da RocketSeat 💜
