@@ -21,7 +21,7 @@ Para começar a utilizar este projeto, siga os passos abaixo:
    ```bash
    npm run dev
    ```
-3. É necessário que tenha o Docker instalado, caso seja necessário, utilize o Docker Compose para iniciar os containers do Docker:
+3. É necessário que tenha o Docker instalado! Execute o comando abaixo para iniciar os containers do Docker utilizando o Docker Compose
    ```bash
    docker-compose up -d
    ```
